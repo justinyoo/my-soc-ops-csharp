@@ -119,7 +119,7 @@ public class BingoGameService
         }
     }
 
-    private class StoredGameData
+    private sealed class StoredGameData
     {
         public int Version { get; set; }
         public GameState GameState { get; set; }

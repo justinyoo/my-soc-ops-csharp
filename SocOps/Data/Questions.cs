@@ -2,7 +2,7 @@ namespace SocOps.Data;
 
 public static class Questions
 {
-    public const string FREE_SPACE = "FREE SPACE";
+    public const string FreeSpace = "FREE SPACE";
 
     public static readonly List<string> QuestionsList = new()
     {

@@ -39,7 +39,7 @@ public class BingoLogicService
                 board.Add(new BingoSquareData
                 {
                     Id = i,
-                    Text = Questions.FREE_SPACE,
+                    Text = Questions.FreeSpace,
                     IsMarked = true,
                     IsFreeSpace = true
                 });
