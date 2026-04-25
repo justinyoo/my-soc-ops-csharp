@@ -1,23 +1,48 @@
 <div class="mc-screen flex flex-col items-center justify-center">
-    <div class="max-w-sm w-full text-center mc-reveal">
-        <h1 class="mc-title text-4xl mb-3 mc-start-float">Soc Ops</h1>
-        <p class="mc-subtitle mb-8">Village Social Bingo</p>
-
-        <div class="mc-panel mb-8 mc-reveal mc-reveal-delay-1">
-            <h2 class="mc-title text-sm mb-4">Quest Log</h2>
-            <ul class="text-left text-gray-700 text-lg space-y-2">
-                <li>- Find players matching each block challenge.</li>
-                <li>- Mark a square when you make a match.</li>
-                <li>- Build 5 blocks in a row to win.</li>
-            </ul>
+    <div class="mc-start-hero">
+        <div class="mc-start-hero-text mc-reveal">
+            <h1 class="mc-title mc-title-glint">Soc Ops</h1>
+            <p class="mc-subtitle">Village Social Bingo</p>
+            <p class="mc-note">Find people matching each square challenge. Mark their square when you make a match. Get 5 in a row to win!</p>
         </div>
-
-        <button
-            @onclick="OnStart"
-            class="mc-btn mc-reveal mc-reveal-delay-2">
-            Start New World
-        </button>
+        <div class="mc-start-hero-grid mc-reveal mc-reveal-delay-1 mc-start-float">
+            <div class="mc-mini-grid">
+                <div class="mc-mini-square winning"></div>
+                <div class="mc-mini-square"></div>
+                <div class="mc-mini-square"></div>
+                <div class="mc-mini-square marked"></div>
+                <div class="mc-mini-square"></div>
+                <div class="mc-mini-square"></div>
+                <div class="mc-mini-square winning"></div>
+                <div class="mc-mini-square"></div>
+                <div class="mc-mini-square marked"></div>
+                <div class="mc-mini-square"></div>
+                <div class="mc-mini-square"></div>
+                <div class="mc-mini-square"></div>
+                <div class="mc-mini-square winning"></div>
+                <div class="mc-mini-square"></div>
+                <div class="mc-mini-square"></div>
+                <div class="mc-mini-square"></div>
+                <div class="mc-mini-square marked"></div>
+                <div class="mc-mini-square"></div>
+                <div class="mc-mini-square winning"></div>
+                <div class="mc-mini-square"></div>
+                <div class="mc-mini-square"></div>
+                <div class="mc-mini-square"></div>
+                <div class="mc-mini-square"></div>
+                <div class="mc-mini-square marked"></div>
+                <div class="mc-mini-square winning"></div>
+            </div>
+        </div>
     </div>
+
+    <div class="mc-start-steps mc-reveal mc-reveal-delay-2">
+        <div class="mc-how-step"><span class="mc-start-badge">1</span> Find a player matching the square</div>
+        <div class="mc-how-step"><span class="mc-start-badge">2</span> Mark their square on your board</div>
+        <div class="mc-how-step"><span class="mc-start-badge">3</span> Get 5 in a row to win</div>
+    </div>
+
+    <button @onclick="OnStart" class="mc-btn mc-reveal mc-reveal-delay-3">⚔ Start New World ⚔</button>
 </div>
 
 @code {
