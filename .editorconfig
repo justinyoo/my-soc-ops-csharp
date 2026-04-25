@@ -1,0 +1,33 @@
+root = true
+
+[*]
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.{cs,razor}]
+indent_style = space
+indent_size = 4
+charset = utf-8-bom
+
+[*.cs]
+# ─── Unused variables ────────────────────────────────────────────────────────
+# CS0219: variable is assigned but never used
+dotnet_diagnostic.CS0219.severity = warning
+# IDE0059: unnecessary assignment of a value (locals)
+dotnet_diagnostic.IDE0059.severity = warning
+# IDE0060: remove unused parameter
+dotnet_diagnostic.IDE0060.severity = warning
+
+# ─── Async / await ───────────────────────────────────────────────────────────
+# CS4014: call is not awaited; execution continues before the call completes
+dotnet_diagnostic.CS4014.severity = warning
+# CA1849: call async methods when in an async method
+dotnet_diagnostic.CA1849.severity = warning
+# CA2012: use ValueTask correctly
+dotnet_diagnostic.CA2012.severity = warning
+# CA2016: forward CancellationToken to methods that accept one
+dotnet_diagnostic.CA2016.severity = suggestion
+
+# CA2007: ConfigureAwait — disabled for Blazor WebAssembly (single-threaded)
+dotnet_diagnostic.CA2007.severity = none
