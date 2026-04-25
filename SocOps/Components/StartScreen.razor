@@ -1,21 +1,21 @@
-<div class="flex flex-col items-center justify-center min-h-full p-6 bg-gray-50">
-    <div class="text-center max-w-sm">
-        <h1 class="text-4xl font-bold text-gray-900 mb-2">Soc Ops</h1>
-        <p class="text-lg text-gray-600 mb-8">Social Bingo</p>
+<div class="mc-screen flex flex-col items-center justify-center">
+    <div class="max-w-sm w-full text-center mc-reveal">
+        <h1 class="mc-title text-4xl mb-3 mc-start-float">Soc Ops</h1>
+        <p class="mc-subtitle mb-8">Village Social Bingo</p>
 
-        <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-200 mb-8">
-            <h2 class="font-semibold text-gray-800 mb-3">How to play</h2>
-            <ul class="text-left text-gray-600 text-sm space-y-2">
-                <li>• Find people who match the questions</li>
-                <li>• Tap a square when you find a match</li>
-                <li>• Get 5 in a row to win!</li>
+        <div class="mc-panel mb-8 mc-reveal mc-reveal-delay-1">
+            <h2 class="mc-title text-sm mb-4">Quest Log</h2>
+            <ul class="text-left text-gray-700 text-lg space-y-2">
+                <li>- Find players matching each block challenge.</li>
+                <li>- Mark a square when you make a match.</li>
+                <li>- Build 5 blocks in a row to win.</li>
             </ul>
         </div>
 
         <button
             @onclick="OnStart"
-            class="w-full bg-accent text-white font-semibold py-4 px-8 rounded-lg text-lg active:bg-accent-light transition-colors">
-            Start Game
+            class="mc-btn mc-reveal mc-reveal-delay-2">
+            Start New World
         </button>
     </div>
 </div>
